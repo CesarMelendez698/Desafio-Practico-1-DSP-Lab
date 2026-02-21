@@ -1,42 +1,172 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* ============================= */
+/* RESET GENERAL */
+/* ============================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================= */
+/* BODY */
+/* ============================= */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ============================= */
+/* CONTENEDOR PRINCIPAL */
+/* ============================= */
+.container {
+  width: 100%;
+  max-width: 650px;
+  padding: 20px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* ============================= */
+/* TÍTULO */
+/* ============================= */
+h1 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
+/* ============================= */
+/* TARJETAS */
+/* ============================= */
 .card {
-  padding: 2em;
+  background: #051347;
+  padding: 30px;
+  border-radius: 18px;
+  margin-bottom: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
-.read-the-docs {
+/* ============================= */
+/* INPUTS */
+/* ============================= */
+input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #2c3e50;
+  transition: 0.3s ease;
+}
+
+input::placeholder {
   color: #888;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2a5298;
+  box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.15);
+}
+
+/* ============================= */
+/* LISTA DE CONTACTOS */
+/* ============================= */
+.contact-item {
+  background: #f4f6fb;
+  color: #2c3e50;
+  padding: 16px 20px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.contact-item:hover {
+  background-color: #e9eef7;
+  transform: scale(1.02);
+}
+
+/* FAVORITOS */
+.favorite {
+  border-left: 10px solid #f4c430;
+}
+
+/* ============================= */
+/* BOTONES */
+/* ============================= */
+button {
+  padding: 9px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Botón principal */
+.btn-primary {
+  background: #2a5298;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1e3c72;
+}
+
+/* Botón secundario */
+.btn-secondary {
+  background: #5f6caf;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #4a5591;
+}
+
+/* Botón eliminar */
+.btn-danger {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #c0392b;
+}
+
+/* ============================= */
+/* MENSAJE DE ERROR */
+/* ============================= */
+.error {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* ============================= */
+/* Star */
+/* ============================= */
+.star {
+  color: #f4c430;
+  margin-right: 6px;
+  font-size: 18px;
 }
