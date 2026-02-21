@@ -1,16 +1,130 @@
-# React + Vite
+    # 📇 Administrador de Contactos en React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con **React JS** que permite gestionar contactos de manera dinámica.  
+El sistema permite agregar, eliminar, buscar y marcar contactos como favoritos en tiempo real.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Características
 
-## React Compiler
+- ✅ Agregar nuevos contactos
+- 🔍 Búsqueda dinámica en tiempo real
+- ⭐ Marcar contactos como favoritos
+- 🗑️ Eliminar contactos
+- 🎨 Interfaz moderna con CSS3
+- ⚛️ Arquitectura basada en componentes
+- 🔄 Renderizado automático al actualizar el estado
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React JS
+- JavaScript (ES6+)
+- Vite
+- CSS3
+- HTML5
+
+---
+
+## 📂 Estructura del Proyecto
+
+src/
+│
+├── components/
+│   ├── ContactList.jsx
+│   ├── ContactForm.jsx
+│   ├── Contact.jsx
+│   └── SearchBar.jsx
+│
+├── App.jsx
+├── main.jsx
+├── App.css
+└── index.css
+
+---
+
+## 🧠 Arquitectura del Proyecto
+
+La aplicación sigue el modelo de **Single Page Application (SPA)** utilizando componentes funcionales y manejo de estado con `useState`.
+
+### Flujo de funcionamiento:
+
+1. main.jsx inicializa la aplicación.
+2. App.jsx organiza la estructura general.
+3. ContactList.jsx administra el estado principal de los contactos.
+4. ContactForm.jsx permite agregar nuevos contactos.
+5. SearchBar.jsx filtra contactos en tiempo real.
+6. Contact.jsx muestra cada contacto individual.
+
+Cada vez que el estado cambia, React vuelve a renderizar la interfaz automáticamente.
+
+---
+
+## ⚙️ Instalación y Ejecución
+
+### 1️⃣ Clonar el repositorio
+
+```bash
+git clone https://github.com/CesarMelendez698/Desafio-Practico-1-DSP-Lab.git
+```
+
+### 2️⃣ Entrar en la carpeta del proyecto
+
+```bash
+cd Desafio_1_DSP
+```
+
+### 3️⃣ Instalar dependencias
+
+```bash
+npm install
+```
+
+### 4️⃣ Ejecutar el proyecto
+
+```bash
+npm run dev
+```
+
+El proyecto se ejecutará en:
+
+http://localhost:5173/
+
+---
+
+## 🎯 Objetivos de Aprendizaje
+
+Este proyecto aplica los siguientes conceptos fundamentales de React:
+
+- Componentes funcionales
+- Props
+- useState
+- Manejo de eventos
+- Formularios controlados
+- Renderizado condicional
+- Separación de responsabilidades
+- Arquitectura basada en componentes
+
+---
+
+## 🚧 Mejoras Futuras
+
+- Persistencia de datos con LocalStorage
+- Integración con base de datos
+- Edición de contactos
+- Animaciones
+- Deploy en producción (Vercel o Netlify)
+
+---
+
+## 👨‍💻 Autor
+
+Cesar Armando Meléndez Arias  
+Proyecto académico – Desarrollo Frontend con React  
+
+---
+
+## 📄 Licencia
+
+Este proyecto fue desarrollado con fines educativos.
